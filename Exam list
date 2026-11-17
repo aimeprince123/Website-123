@@ -1,17 +1,12 @@
 <?php
-
-$scores = [72, 85, 90, 64, 85];
-
-$highest = max($scores);
-$lowest = min($scores);
-
-$average = round(
-    array_sum($scores) / count($scores),
-    1
-);
-
-echo "Highest mark: " . $highest . "<br>";
-echo "Lowest mark: " . $lowest . "<br>";
-echo "Average: " . $average;
-
+$marks=[90, 85, 72, 64, 85];
+$lowest=min($marks);
+$highest=max($marks);
+echo "Lowest marks: ".$lowest."<br>";
+echo "Highest marks: ".$highest."<br>";
+array_sum([90, 85, 72, 64, 85]);
+echo "Total marks: ".array_sum($marks)."<br>";
+$average=array_sum($marks)/count($marks);
+echo "Average marks: ".$average;
 ?>
+
