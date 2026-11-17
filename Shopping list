@@ -1,0 +1,17 @@
+<?php
+
+$list = ["milk", "bread", "eggs"];
+
+array_push($list, "rice");
+
+if (in_array("eggs", $list)) {
+    echo "Eggs found<br>";
+} else {
+    echo "Eggs not found<br>";
+}
+
+echo "Total items: " . count($list) . "<br>";
+
+echo "Shopping list: " . implode(", ", $list);
+
+?>
