@@ -1,0 +1,15 @@
+<?php
+
+date_default_timezone_set("Africa/Kigali");
+
+$today = new DateTimeImmutable("today");
+
+$deadline = new DateTimeImmutable("2026-12-25");
+
+$days = $today->diff($deadline)->days;
+
+echo "Days remaining: " . $days . "<br>";
+
+echo "Deadline: " . $deadline->format("l, d F Y");
+
+?>
