@@ -1,0 +1,13 @@
+<?php
+
+$text = "the quick brown fox";
+
+$text = str_replace("quick", "slow", $text);
+
+$text = ucwords($text);
+
+echo "Full result: " . $text . "<br>";
+
+echo "First 8 characters: " . substr($text, 0, 8);
+
+?>
